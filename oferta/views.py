@@ -31,7 +31,7 @@ def procesarFormulario(request):
         if oferta.is_valid():
             oferta.save()
             oferta=FormularioOferta()
-        return render(request,"formusuario.html",{"form":oferta,"mensaje":"ok"} )
+        return render(request,"formoferta.html",{"form":oferta,"mensaje":"ok"} )
 
 def editarUsuario(request,id_oferta):
     oferta=Oferta.objects.filter(id=id_oferta).first()
