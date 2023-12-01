@@ -9,3 +9,6 @@ def index(request):
 
 def login_usuario(request):
     return render(request,'login_usuario.html')
+
+def login_empresa(request):
+    return render(request, 'login_empresa.html')
