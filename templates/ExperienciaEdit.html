@@ -1,4 +1,4 @@
-{% extends 'login_empresa.html' %}
+{% extends 'listexperiencia.html' %}
 {% load static %}
 {% comment %} {%extends 'home.html'%} {% endcomment %}
 
@@ -11,14 +11,14 @@
     {% endif %}
 
     <h1>Edicion de Usuarios</h1>
-    <form action="{% url "actualizar_usuario" oferta.id %}" method="POST" enctype="multipart/form-data">
+    <form action="{% url "actualizar_experiencia" experiencia.id %}" method="POST" enctype="multipart/form-data">
         
         {% csrf_token %}
         {{ form.as_p }}
         {% if mensaje %}
         
             <div class="alert alert-success" role="alert">
-            Usuario actualizado Exitosamente
+            Experiencia actualizada Exitosamente
             </div>
         {% endif %}
         

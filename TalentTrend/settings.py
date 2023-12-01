@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'oferta.apps.OfertaConfig',
-    'experiencia.apps.ExperienciaConfig'
+    'experiencia.apps.ExperienciaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

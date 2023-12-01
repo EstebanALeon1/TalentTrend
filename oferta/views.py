@@ -22,9 +22,9 @@ def Ofertalist(request):
 
 def indexFormulario(request):
     oferta=FormularioOferta()
-    return render(request, "formusuario.html",{"form":oferta})
+    return render(request, "formoferta.html",{"form":oferta})
 
-def procesarFormulario(request):
+def procesarFormularioOferta(request):
     
     if 'guardar' in request.POST:        
         oferta=FormularioOferta(request.POST,request.FILES)
@@ -33,12 +33,12 @@ def procesarFormulario(request):
             oferta=FormularioOferta()
         return render(request,"formoferta.html",{"form":oferta,"mensaje":"ok"} )
 
-def editarUsuario(request,id_oferta):
+def editarOferta(request,id_oferta):
     oferta=Oferta.objects.filter(id=id_oferta).first()
     form=FormularioOferta(instance=oferta)
-    return render(request, "UsuarioEdit.html",{"form":form,"oferta":oferta})
+    return render(request, "OfertaEdit.html",{"form":form,"oferta":oferta})
 
-def actualizarUsuario(request,id_oferta):
+def actualizarOferta(request,id_oferta):
     oferta=Oferta.objects.get(pk=id_oferta)
     form=FormularioOferta(request.POST,instance=oferta)
     if form.is_valid():
@@ -46,7 +46,7 @@ def actualizarUsuario(request,id_oferta):
        get_oferta=Oferta.objects.all()
        return render(request,"login_empresa.html",{"get_oferta":get_oferta})
     
-def eliminarUsuario(request, id_oferta):
+def eliminarOferta(request, id_oferta):
     n_oferta=Oferta.objects.get(pk=id_oferta)
     n_oferta.delete()
     oferta=Oferta.objects.all()

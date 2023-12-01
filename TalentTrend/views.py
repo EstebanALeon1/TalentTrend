@@ -5,3 +5,7 @@ from django.shortcuts import render
 
 def index(request):
     return render(request,'index.html')
+
+
+def login_usuario(request):
+    return render(request,'login_usuario.html')

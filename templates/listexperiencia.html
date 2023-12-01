@@ -21,9 +21,18 @@
                     <div class="col-8">
                         <img src="{%static 'img/Logo.png'%}" alt="Logoiama" class="logonav">
                     </div>
-                    
+                    <div class="col-6">
+                        <form action="/buscar" method="get" class="search-form">
+                            <div class="search-container">
+                              <input type="text" placeholder="Buscar..." name="busqueda" class="search-input">
+                              <button type="submit" class="search-button">
+                                <img src="{%static 'img/search.svg'%}" alt="Buscar" class="search-icon">
+                              </button>
+                            </div>
+                        </form>    
+                    </div>
                     <div class="col-4">
-                        <a href="{%url 'index_empresa'%}" class="btn btn-outline-secondary btn-rounded btn-sm">
+                        <a href="{%url 'index'%}" class="btn btn-outline-secondary btn-rounded btn-sm">
                             <img src="{%static 'img/box-arrow-left.svg'%}" alt="Ingresar" class="logo_cerrar_seccion">cerrar sesión
                         </a>  
                     </div>
@@ -33,7 +42,7 @@
     </header>
     <section>
         <div class="options-panel">
-            <a href="{%url "index_formulario_oferta"%}" class="btn btn-primary btn-block">Insertar Oferta</a>
+            <a href="{%url "index_formulario_experiencia"%}" class="btn btn-primary btn-block">Insertar Oferta</a>
             <button class="btn btn-primary btn-block">Editar Oferta</button>
         </div>
         
@@ -42,33 +51,29 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Tipo_Contrato</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Fecha de inicio</th>
+                        <th scope="col">Fecha de finalizacion</th>
                         <th scope="col">Cargo</th>
-                        <th scope="col">CUOC</th>
-                        <th scope="col">Salario</th>
-                        <th scope="col">Tipo_Empleo</th>
-                        <th scope="col">N_Vacantes</th>
-                        <th scope="col">N_Postulaciones</th>
+                        <th scope="col">Funciones</th>
                         <th scope="col">Editar</th>
                         <th scope="col">Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
-                      {% for usr in get_oferta%}
+                      {% for usr in get_experiencia%}
                     <tr>
                                                           
-                      <td>{{usr.nombre}}</td>
-                      <td>{{usr.tipo_contrato}}</td>
+                      <td>{{usr.empresa}}</td>
+                      <td>{{usr.descripcion}}</td>
+                      <td>{{usr.fecha_inicio}}</td>
+                      <td>{{usr.fecha_fin}}</td>
                       <td>{{usr.cargo}}</td>
-                      <td>{{usr.cuoc}}</td>
-                      <td>{{usr.salario}}</td>
-                      <td>{{usr.tipo_empleo}}</td>
-                      <td>{{usr.n_vacantes}}</td>
-                      <td>{{usr.n_postulaciones}}</td>
+                      <td>{{usr.funciones}}</td>
 
-                      <td><a  class="btn btn-warning" href={% url "editar_oferta" usr.id %}>Editar</a></td>
-                      <td><a  class="btn btn-danger" href={% url "eliminar_oferta" usr.id %}>Eliminar</a></td>
+                      <td><a  class="btn btn-warning" href={% url "editar_experiencia" usr.id %}>Editar</a></td>
+                      <td><a  class="btn btn-danger" href={% url "eliminar_experiencia" usr.id %}>Eliminar</a></td>
                     </tr>
                     {%endfor%}      
                   </tbody> 

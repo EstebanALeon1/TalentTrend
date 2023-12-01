@@ -14,18 +14,18 @@
 <body>
    
     <header>
-        <h1>Formulario Nueva Oferta</h1>        
+        <h1>Formulario Nueva Experiencia</h1>        
     </header>
         
         <div class="container">
-            <form action="{% url "procesar_formulario_oferta" %}" enctype="multipart/form-data" method="POST" >
+            <form action="{% url "procesar_formulario" %}" enctype="multipart/form-data" method="POST" >
                 {% csrf_token %}
                 {{ form.as_p }}
                 <button type="submit" name="guardar" class="btn btn-primary">Guardar</button>            
                 {% comment %} <button type="submit" name="regresar" class="btn btn-primary">Regresar</button> {% endcomment %}
                 {% comment %} <button type="submit" name="regresar" class="btn btn-primary" onclick="history.back()">Regresar</button> {% endcomment %}
-                <a href="{%url 'login_empresa'%}" class="btn btn-primary">regresar</a>
-                <a href="{%url 'index_empresa'%}" class="btn btn-primary">home</a>
+                <a href="{%url 'experiencialist'%}" class="btn btn-primary">regresar</a>
+                <a href="{%url 'login_usuario'%}" class="btn btn-primary">home</a>
             </form>
             
         </div>
