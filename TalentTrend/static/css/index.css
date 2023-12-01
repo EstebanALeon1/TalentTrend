@@ -1,0 +1,379 @@
+/* Estilo para el color de la pagina*/
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+/* Estilo para el header1: botones busco trabajo y soy empresa*/
+.header1 {
+    height: auto;
+}
+
+/* Estilo para los botones Busco trabajo y Soy empresa*/
+#botones_principales {
+    background-color: rgb(247, 247, 247);
+    width: 100% !important;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo para los botones Busco trabajo y Soy empresa*/
+.btn-outline-primary {
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    border-radius: 20px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-primary:active {
+    background-color: #FF6C00 !important;
+}
+
+
+/* Estilo para el header 2: logo, barra de busqueda, y botones de acceso*/
+.header2 {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+/* Estilo para el contenedor de el logo, barra de busqueda y botones de acceso*/
+#logbaring {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 10px, 0px;
+    height: 80px;
+    /* border-radius: 10px; */
+}
+
+/* Estilo para el logo*/
+.logonav {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 4px;
+}
+
+/* Estilo para la barra de búsqueda */
+.search-form {
+    display: flex;
+    max-width: 300px;
+    /* Ancho máximo de la barra de búsqueda */
+    margin: 0 auto;
+    /* Centrar en el contenedor */
+}
+
+/* Estilo para el contenedor de la búsqueda (para alinear elementos) */
+.search-container {
+    margin: 12px;
+    position: relative;
+    top: 7px;
+}
+
+/* Estilo para el campo de entrada de texto */
+.search-input {
+    padding: 8px 40px 8px 10px;
+    /* Ajuste del padding para el texto */
+    border: 2px solid #ff6c00;
+    border-radius: 20px;
+    /* Hacer los bordes más redondeados */
+    width: 100%;
+    /* Ancho del campo de entrada */
+    color: #000;
+    /* Color del texto */
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #999;
+    /* Color del texto de marcador de posición */
+}
+
+/* Estilo para el botón de búsqueda (ocultar visualmente) */
+.search-button {
+    position: absolute;
+    right: 0;
+    /* Ajustar la posición del botón */
+    top: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para el ícono de la lupa dentro del botón */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    /* Borde inicial transparente */
+    border-radius: 50%;
+    /* Borde redondeado */
+    transition: all 0.3s;
+    /* Animación de transición */
+    position: absolute;
+    right: 10px;
+    /* Ajustar la posición del ícono */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilo al pasar el mouse sobre el ícono */
+.search-button:hover .search-icon {
+    right: 20px;
+    /* Ajustar la posición del ícono al pasar el mouse */
+}
+
+/*Estilos para los botones de acceso*/
+.btn-outline-secondary {
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    border-radius: 20px !important;
+    position: relative;
+    overflow: hidden;
+    top: 13px;
+    margin: 5px;
+    left: 70px;
+}
+
+.btn-outline-secondary i {
+    transition: color 0.3s;
+    /* Añade una transición suave al cambio de color */
+}
+
+.btn-outline-secondary:hover i {
+    color: #ffffff;
+    /* Cambia el color del ícono al hacer hover en el botón */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-secondary:active {
+    background-color: #FF6C00 !important;
+}
+
+
+.logo_iniciar {
+    width: 25px;
+    ;
+    height: 25px;
+    ;
+    margin: 4px;
+}
+
+.logo_crear {
+    width: 20px;
+    ;
+    height: 20px;
+    ;
+    margin: 6px;
+}
+
+/* Estilo para la imagen principal de la pagina*/
+.imagen_inicio {
+    width: 100%;
+    margin: 0px;
+    /* Establece los márgenes izquierdo y derecho automáticos para centrar */
+    display: block;
+    /* Convierte la imagen en un bloque para aplicar márgenes automáticos */
+    padding: 0px;
+}
+
+/*Estilos para el h2 de la pagina*/
+.busqueda_empleo {
+    margin: 80px;
+    font-size: 40pt;
+    font-weight: 900;
+}
+
+/* Estilo de los 3 botones: empleo por empresa, por ciudad, por CUOC */
+.btn-outline-success {
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    font-size: 24pt;
+    font-weight: 900;
+    position: relative;
+    overflow: hidden;
+    margin: 40px;
+    top: 100px;
+    height: 100px;
+    width: 400px;
+    padding: 25px;
+}
+
+.btn-outline-success i {
+    transition: color 0.3s;
+    /* Añade una transición suave al cambio de color */
+}
+
+.btn-outline-success:hover i {
+    color: #ffffff;
+    /* Cambia el color del ícono al hacer hover en el botón */
+}
+
+.btn-outline-success:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-success:active {
+    background-color: #FF6C00 !important;
+}
+
+/* Estilo el footer de la pagina */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 400px;
+    height: 300px;
+}
+
+footer .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo para la imagen del footer */
+.imagen_footer {
+    width: 200px;
+    height: 200px;
+    /* Añade esto para centrar la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Estilos generales */
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.form-box {
+    background-color: #fff; /* Color de fondo */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h2 {
+    color: #FF6C00; /* Color del texto del título */
+}
+
+
+.input-box {
+    margin: 10px ;
+}
+
+.input-box input {
+    background-color: #f0f0f0; /* Color de fondo del campo */
+    color: #000; /* Color del texto */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.login-popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ... Otros estilos para el formulario y elementos dentro del popup */
+
+/* Estilo para mostrar el formulario cuando se activa el fragmento en la URL */
+.overlay:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay:target .login-popup {
+    display: block;
+}
+
+
+/* Estilos específicos para el botón de éxito (botón de contorno) en el formulario */
+.form-btn {
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    border-radius: 5px !important;
+    margin: 15px;
+}
+
+
+.form-btn:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.form-btn:active {
+    background-color: #FF6C00 !important;
+}
+
+.close-btn {
+    position: relative;
+    left: 125px;
+    bottom: 17px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1; /* Asegura que esté sobre el formulario */
+}
+
+.close-btn:hover {
+    color: #FF6C00;
+}
+
+
+.signup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.signup .close-btn {
+    position: relative;
+    left: 135px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.signup .close-btn:hover {
+    color: #FF6C00;
+}

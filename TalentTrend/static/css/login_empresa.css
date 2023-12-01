@@ -1,0 +1,202 @@
+/* Estilo para el color de la pagina*/
+body {
+    background-color: rgb(247, 247, 247);
+}
+
+/* Estilo para el heade: logo y botones de acceso*/
+.header2 {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+}
+
+/* Estilo para el contenedor de el logo, barra de busqueda y botones de acceso*/
+#logbaring {
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    padding: 10px, 0px;
+    height: 80px;
+    /* border-radius: 10px; */
+}
+
+/* Estilo para el logo*/
+.logonav {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 4px;
+}
+
+/*Estilos para los botones de acceso*/
+.btn-outline-secondary {
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    border-radius: 20px !important;
+    position: relative;
+    overflow: hidden;
+    top: 13px;
+    margin: 5px;
+    left: 250px;
+}
+
+.btn-outline-secondary i {
+    transition: color 0.3s;
+    /* Añade una transición suave al cambio de color */
+}
+
+.btn-outline-secondary:hover i {
+    color: #ffffff;
+    /* Cambia el color del ícono al hacer hover en el botón */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-secondary:active {
+    background-color: #FF6C00 !important;
+}
+
+
+.logo_cerrar_seccion {
+    width: 25px;
+    ;
+    height: 25px;
+    ;
+    margin: 4px;
+}
+
+
+
+
+
+/* Estilo para el panel de opciones en la parte izquierda */
+.options-panel {
+    position: fixed;
+    top: 80px; /* Ajusta la posición superior según tu necesidad */
+    left: 0;
+    width: 200px;
+    height: 70%;
+    background-color: #f8f9fa; /* Color de fondo del panel */
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra a la derecha del panel */
+}
+
+.options-panel button {
+    margin-bottom: 10px;
+}
+
+
+.btn-primary{
+    background-color: #ffffff;
+    border-color: #FF6C00 !important;
+    color: #FF6C00;
+    font-size: 16px;
+    border-radius: 30px !important;
+    position: relative;
+    overflow: hidden;
+    top: 20px;
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px !important; 
+}
+
+.btn-primary i {
+    transition: color 0.3s;
+    /* Añade una transición suave al cambio de color */
+}
+
+.btn-primary:hover i {
+    color: #ffffff;
+    /* Cambia el color del ícono al hacer hover en el botón */
+}
+
+.btn-primary:hover {
+    background-color: #FF6C00 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:active {
+    background-color: #FF6C00 !important;
+}
+
+
+
+
+
+
+/* Estilos para la tabla */
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    position: relative;
+    width: 80%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    left: 250px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+    text-align: center;
+    color: #FF6C00;
+}
+
+.table th {
+    background-color: #f8f9fa; /* Color de fondo del encabezado */
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo de las filas pares */
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f0f8ff; /* Cambia el color al hacer hover en las filas */
+}
+
+
+
+
+
+/* Estilo el footer de la pagina */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Asegura que el footer ocupa el ancho completo */
+    background-color: #f8f8f8; /* Cambia el color de fondo según tus preferencias */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Estilo para la imagen del footer */
+.imagen_footer {
+    width: 200px;
+    height: 200px;
+    /* Añade esto para centrar la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
